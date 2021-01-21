@@ -1,5 +1,5 @@
 public class Kalender implements IKalender {
-    public boolean tagGültig(int tag, int monat) {
+    public boolean tagGueltig(int tag, int monat) {
         if ((tag == 30 || tag==31) && monat == 2) {
             return false;
         }

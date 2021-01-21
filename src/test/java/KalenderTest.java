@@ -12,20 +12,20 @@ public class KalenderTest extends TestCase {
     }
 
     @Test
-    public void testTagGültig_Jan() {
-        assertTrue(kalender.tagGültig((int)(Math.random()*31)+1, 1));
+    public void testTagGueltig_Jan() {
+        assertTrue(kalender.tagGueltig((int)(Math.random()*31)+1, 1));
     }
     @Test
-    public void testTagGültig_Feb() {
-        assertTrue(kalender.tagGültig((int)(Math.random()*29)+1, 2));
+    public void testTagGueltig_Feb() {
+        assertTrue(kalender.tagGueltig((int)(Math.random()*29)+1, 2));
     }
     @Test
-    public void testTagGültig_Jun() {
-        assertFalse(kalender.tagGültig((int)(Math.random()*31)+1, 6));
+    public void testTagGueltig_Jun() {
+        assertFalse(kalender.tagGueltig((int)(Math.random()*31)+1, 6));
     }
     @Test
-    public void testTagGültig_FebFalse() {
-        assertFalse(kalender.tagGültig(31, 2));
+    public void testTagGueltig_FebFalse() {
+        assertFalse(kalender.tagGueltig(31, 2));
     }
 
 }
